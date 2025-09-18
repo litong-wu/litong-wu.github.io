@@ -1,0 +1,25 @@
+<section class="container list">
+  <header>
+    <h1 class="title">
+      <a class="title-link" href="{{ .Permalink | safeURL }}">
+        {{- if eq .Kind "term" -}}
+          {{- i18n .Data.Plural 1 | title -}}
+          {{- print ": " -}}
+        {{- end -}}
+        {{- i18n (lower .Title) | default .Title | title -}}
+      </a>
+    </h1>
+  </header>
+  <ul>
+    {{ range .Paginator.Pages }}
+      <li>
+        <a class="post-item" href="{{ .Params.externalLink | default .RelPermalink }}">
+          <span class="title">{{ .Title }}</span>
+          <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+          <div class="abstract">{{ .Params.abstract | markdownify }}</div>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+  {{ partial "pagination.html" . }}
+</section>

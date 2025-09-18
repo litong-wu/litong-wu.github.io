@@ -1,0 +1,653 @@
+@import "_variables";
+
+@font-face {
+  font-family: "Commit Mono";
+  src: url("/fonts/CommitMono.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/fonts/QuattrocentoSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/fonts/QuattrocentoSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/fonts/QuattrocentoSans-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Quattrocento Sans";
+  src: url("/fonts/QuattrocentoSans-BoldItalic.woff2") format("woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter KaTeX";
+  src: url("/fonts/Inter-Katex.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lete_KaTeX_Size1";
+  src: url("/fonts/Lete_KaTeX_Size1.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lete_KaTeX_Size2";
+  src: url("/fonts/Lete_KaTeX_Size2.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lete_KaTeX_AMS";
+  src: url("/fonts/Lete_KaTeX_AMS.woff2") format("woff2");
+}
+
+::selection {
+  background: #FDDA0D60;
+}
+
+// Fonts, colours, etc.
+.footer,
+.footer a {
+  color: $semi-light-text-color;
+  font-weight: normal;
+}
+
+article {
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+  }
+
+  strong {
+    font-weight: 600;
+    color: $alt-fg-color;
+  }
+
+  code {
+    font-size: 90%;
+    font-weight: inherit;
+    background-color: $alt-bg-color;
+  }
+
+  a code,
+  a strong {
+    color: inherit;
+  }
+
+  pre {
+    font-size: 100%;
+    border: 0.1em solid #d0d8dc;
+  }
+
+  .heading-link {
+    display: inline-block;
+    padding: 0 0.25em;
+    font-size: 100% !important;
+    color: $light-text-color;
+  }
+
+  .dimmed,
+  .dimmed strong {
+    color: $semi-light-text-color;
+  }
+
+  .center {
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  img {
+    border: 0.15em solid #d0d8dc;
+  }
+}
+
+.navigation a:hover,
+.navigation a:focus,
+.list a:hover,
+.list a:focus {
+  text-decoration: none;
+}
+
+h1,
+h1 .title-link {
+  font-weight: 500;
+}
+
+html[lang="zh-cn"] {
+  .navigation a.navigation-title,
+  .navigation a.navigation-link {
+    font-weight: normal;
+  }
+}
+
+// Override KaTeX font
+span.katex {
+  font-size: 1em;
+  font-family:
+    Inter KaTeX,
+    $font-family;
+}
+
+span.katex-mathml {
+  // default behaviour is hidden but selectable,
+  // but not desirable as copy-pasting will have the text twice
+  display: none;
+}
+
+span.katex-display {
+  overflow-x: auto;
+  overflow-y: clip;
+  padding: 0.1em 0;
+}
+
+span.katex .mathnormal,
+span.katex .mathbf,
+span.katex .textrm {
+  font-family: $font-family;
+}
+
+span.katex .op-symbol.small-op,
+span.katex .delimsizing.size1 {
+  font-family: Lete_KaTeX_Size1;
+}
+
+span.katex .op-symbol.large-op,
+span.katex .delimsizing.size2 {
+  font-family: Lete_KaTeX_Size2;
+}
+
+span.katex .amsrm,
+span.katex .mathbb,
+span.katex .textbb {
+  font-family: Lete_KaTeX_AMS;
+}
+
+// Embolden lines
+span.katex .frac-line {
+  border-bottom-width: 0.1em !important;
+}
+
+span.katex svg {
+  path {
+    stroke: currentColor;
+    stroke-width: 20;
+  }
+}
+
+// Home page
+.about {
+  margin-bottom: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.home-author {
+  width: 20em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 1em;
+}
+
+.home-desc-container {
+  width: 60%;
+  text-align: left;
+  padding: 4em 0 0 0em;
+}
+
+@media only screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  h1.home-title {
+    padding-top: 2em !important;
+  }
+  
+  .home-author {
+    padding: 0;
+    width: 100%;
+  }
+
+  .home-desc-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .home-desc {
+    line-height: 1.6 !important;
+  }
+}
+
+h1.home-title {
+  font-size: 2.3em;
+  padding: 3em 0 0.5em 0;
+}
+
+.centered .about h2.home-subtitle {
+  font-size: 1.7em;
+  letter-spacing: 0.25em;
+  font-weight: normal;
+  margin: 0.25em -0.25em 1.5em 0;
+}
+
+html[lang="zh-cn"] {
+  h1.home-title {
+    font-weight: normal;
+    padding: 0.5em 0.5em 0.5em 0.75em;
+    letter-spacing: 0.25em;
+  }
+
+  .centered .about h2.home-subtitle {
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin: 0.15em 0 1.6em 0;
+  }
+}
+
+p.home-desc {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+// Posts
+.post-meta {
+  color: $semi-light-text-color;
+
+  .posted-on {
+    @media only screen and (max-width: 768px) {
+      margin: 0;
+      display: block;
+    }
+  }
+}
+
+.content .post .post-meta .tags .tag {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+
+  a {
+    color: inherit;
+    font-weight: normal;
+  }
+}
+
+.taxonomy {
+  ul {
+    list-style-type: disc;
+  }
+
+  li {
+    display: list-item;
+  }
+
+  .taxonomy-element {
+    display: inline;
+    background: none;
+    border-radius: 0;
+
+    a {
+      color: $link-color;
+    }
+  }
+}
+
+section.list > ul {
+  list-style: disc;
+  padding-left: 1.5em;
+
+  li {
+    display: list-item !important;
+    padding-inline-start: 0.25em;
+    margin: 0;
+  }
+
+  li::marker {
+    color: $semi-light-text-color;
+    margin-right: 0.5em;
+  }
+}
+
+section.list > ul li a.post-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem 0;
+  font-weight: normal;
+  color: $fg-color;
+  line-height: 1.75;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+
+  &:hover .title {
+    color: $link-color;
+  }
+
+  span.date {
+    text-align: left;
+    width: inherit;
+    margin-right: 1em;
+
+    @media only screen and (max-width: 768px) {
+      display: inline;
+    }
+  }
+
+  span.tags {
+    color: $semi-light-text-color;
+
+    span.tag {
+      margin-left: 0.5em;
+    }
+  }
+
+  .title {
+    font-size: 1.1em;
+    transition: color 0.2s;
+  }
+
+  .abstract {
+    color: $semi-light-text-color;
+    font-size: 1em;
+    text-align: justify;
+  }
+}
+
+// Disable hard line breaks
+p {
+  white-space: normal;
+}
+
+// lists
+article {
+  ul {
+    padding-left: 2em;
+  }
+
+  ul li {
+    // separation between bullet and text
+    padding-inline-start: 0.25em;
+  }
+
+  ul li::marker {
+    color: $semi-light-text-color;
+    margin-right: 0.5em;
+  }
+
+  ul ul {
+    padding-left: 1.5em;
+
+    li {
+      list-style-type: disclosure-closed;
+    }
+  }
+}
+
+// TOC
+.toc {
+  margin: 2em 0;
+  padding-left: 1.25em;
+  border-left: 0.15em solid $light-text-color;
+
+  h2 {
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+    margin: 0;
+    margin-bottom: 0.75em;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 1.5em;
+
+    li {
+      padding: 0;
+    }
+  }
+
+  nav > ul {
+    padding-left: 0;
+  }
+}
+
+// Section numbers
+section.post article {
+  .post-content > h2 {
+    counter-increment: section;
+
+    &::before {
+      content: counter(section);
+      font-variant-numeric: tabular-nums;
+      color: $light-text-color;
+      margin-right: 0.75em;
+    }
+  }
+
+  #TableOfContents > ul > li {
+    counter-increment: tocsection;
+
+    &::before {
+      content: counter(tocsection);
+      font-variant-numeric: tabular-nums;
+      font-weight: 600;
+      color: $light-text-color;
+      margin-right: 0.75em;
+    }
+  }
+}
+
+// Theorem blocks
+article .block {
+  background-color: $alt-bg-color;
+  border: 0.1em solid #d0d8dc;
+  border-radius: 1em;
+  padding: 0.75em 1.25em;
+  margin: 1em 0;
+
+  .block-title {
+    font-weight: 600;
+    color: $link-color;
+    margin: 0;
+  }
+
+  .block-content {
+    margin-top: 0.5em;
+  }
+
+  p:first-child,
+  ul:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child,
+  ul:last-child {
+    margin-bottom: 0;
+  }
+
+  ul li {
+    margin: 0.5em 0;
+  }
+}
+
+// Spoilers
+article details {
+  background-color: $alt-bg-color;
+  border: 0.1em solid #d0d8dc;
+  border-radius: 1em;
+  padding: 0.75em 1.25em;
+  margin: 1em 0;
+
+  & > div {
+    margin-top: 0.5em;
+  }
+
+  p:first-child,
+  ul:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child,
+  ul:last-child {
+    margin-bottom: 0;
+  }
+
+  ul li {
+    margin: 0.5em 0;
+  }
+
+  summary {
+    font-weight: 500;
+    cursor: pointer;
+    color: $link-color;
+  }
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 8em 1fr;
+  row-gap: 1.6em;       // slightly bigger for breathing space
+  column-gap: 1em;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;  // single column on small screens
+    row-gap: 0.5em;
+  }
+}
+
+.timeline-year {
+  text-align: left;
+  font-weight: 600;
+  width: 6em;
+  color: $alt-fg-color;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 1em;
+  }
+}
+
+.timeline-entry {
+  .timeline-title {
+    display: block;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0.3em 0 0 0;
+    list-style-type: none;
+    font-size: 90%;
+    line-height: 1.6;
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 0;
+    }
+  }
+
+  li {
+    margin: 0.1em 0;
+
+    @media only screen and (max-width: 768px) {
+      padding-left: 0;
+    }
+  }
+
+  .highlight-line {
+    font-weight: 510;
+    list-style: none;
+  }
+}
+
+.paper-entry {
+  display: flex;
+  align-items: flex-start; // aligns tops together
+  gap: 2.5em;
+  margin: 3em 0;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+}
+
+.paper-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: none;
+  border-radius: 0.8em;
+
+  @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
+}
+
+.paper-image {
+  @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+    width: 200px;
+    max-width: 50%;
+  }
+}
+
+.paper-content {
+  flex: 1;              // let text take remaining width
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; // makes sure title sits at top
+}
+
+.paper-title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  color: $alt-fg-color;
+}
+
+.paper-abstract {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: $semi-light-text-color;
+  text-align: justify;
+  margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    text-align: left;
+  }
+}
+
