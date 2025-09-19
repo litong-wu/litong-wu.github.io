@@ -233,7 +233,7 @@ span.katex svg {
   }
 
   h1.home-title {
-    padding-top: 2em !important;
+    padding-top: 1.5em !important;
   }
   
   .home-author {
@@ -651,3 +651,6 @@ article details {
   }
 }
 
+figure.center img {
+  border: none;
+}

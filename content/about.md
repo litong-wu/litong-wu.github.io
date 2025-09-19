@@ -72,5 +72,7 @@ I have now (temporarily, at least) settled into the field of machine-learning-dr
 
 
 ## Contact
+Contact me at [litong.wu@jesus.ox.ac.uk](mailto:litong.wu@jesus.ox.ac.uk)
+<br>
 
-Contact me at [litong.wu@jesus.ox.ac.uk](mailto:litong.wu@jesus.ox.ac.uk).
+{{< figure src="/images/portrait_sketch.png" alt="portrait_sketch" class="center" width="140" >}}
