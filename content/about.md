@@ -6,7 +6,7 @@ I was born and raised in 遵义 (Zūnyì), 贵州 (Guìzhōu), cradled by misty 
 
 In recent years, the tranquil city of Oxford has seen me dozing over books and notes, exploring particles that form matter; the matter that forms us, the universe, and beyond. At times I shuttled between fume hoods hands full of deadly chemicals; at others I traced curly arrows to glimpse the fate of a molecule; all in search of decoding the message hidden within each symbol of the periodic table.
 
-I have now (temporarily, at least) settled into the field of machine-learning-driven atomistic simulation, a burgeoning field that bridges one black box to another. Every day, I sit before a glowing screen, with processors humming behind the scenes, working in sincere intention towards discoveries that might one day be transformative.
+I have now (temporarily, at least) settled into the field of machine-learning-driven atomistic simulation, a burgeoning field that bridges one black box to another. Every day, I sit before a glowing screen, with processors humming behind the scenes, working with sincere intention towards discoveries that might one day be transformative.
 
 ## Education
 

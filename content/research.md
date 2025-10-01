@@ -2,7 +2,7 @@
 title: Research
 ---
 
-Supervised by [Volker Deringer](https://www.chem.ox.ac.uk/people/volker-deringer/), 
+Supervised by [Prof. Volker Deringer](https://www.chem.ox.ac.uk/people/volker-deringer/), 
 I work in the field of atomistic simulation, 
 with a focus on applying machine learning methods for amorphous materials modelling.
 
