@@ -76,7 +76,8 @@ I have now (temporarily, at least) settled into the field of machine-learning-dr
 
 
 ## Contact
-Contact me at [litong.wu@jesus.ox.ac.uk](mailto:litong.wu@jesus.ox.ac.uk)
+For anything you’d like to share or discuss, contact me at [litong.wu@jesus.ox.ac.uk](mailto:litong.wu@jesus.ox.ac.uk)
 <br>
+Artwork kindly created by my friend [@jz.potattoo](https://www.instagram.com/jz.potattoo?igsh=c3M3cjE1Y2hqazNh), who is also a tattoo artist.
 
 {{< figure src="/images/portrait_sketch.png" alt="portrait_sketch" class="center" width="140" >}}
