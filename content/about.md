@@ -8,6 +8,10 @@ In recent years, the tranquil city of Oxford has seen me dozing over books and n
 
 I have now (temporarily, at least) settled into the field of machine-learning-driven atomistic simulation, a burgeoning field that bridges one black box to another. Every day, I sit before a glowing screen, with processors humming behind the scenes, working with sincere intention towards discoveries that might one day be transformative.
 
+<div class="about-banner">
+  <img src="/images/about_banner.png" alt="about_banner">
+</div>
+
 ## Education
 
 <div class="timeline">
