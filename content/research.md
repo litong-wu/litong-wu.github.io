@@ -16,7 +16,7 @@ with a focus on applying machine learning methods for amorphous materials modell
     </span>
     <div class="paper-abstract">
       Leveraging an interatomic force field built on an equivariant message-passing neural network architecture (<a href="https://mace-docs.readthedocs.io/en/latest/index.html">MACE</a>), this work evaluated the applicability of the traditional Zintl–Klemm rules to the amorphous Na–P binary system, commonly formed in sodium-ion batteries with phosphorus anodes, and provided further structural, energetic, and electronic analyses.
-      <a href="https://arxiv.org/abs/2504.04920v1" class="button">Read more</a>
+      <a href="https://doi.org/10.1002/anie.202508305" class="button">Read more</a>
     </div>
   </div>
 </div>
