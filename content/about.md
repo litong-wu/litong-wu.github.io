@@ -23,7 +23,7 @@ I have now (temporarily, at least) settled into the field of machine-learning-dr
     </span>
     <ul>
       <li>Project: Microscopic insights into amorphous battery anodes</li>
-      <li>Supervisors: <a href="https://www.chem.ox.ac.uk/people/volker-deringer/">Volker Deringer</a>, <a href="https://www.materials.ox.ac.uk/peoplepages/pasta.html">Mauro Pasta</a></li>
+      <li>Supervisors: <a href="https://www.chem.ox.ac.uk/people/volker-deringer/">Volker Deringer</a>, <a href="https://www.pastagroup.org/">Mauro Pasta</a></li>
     </ul>
   </div>
 
