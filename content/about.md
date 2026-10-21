@@ -23,7 +23,7 @@ I have now (temporarily, at least) settled into the field of machine-learning-dr
     </span>
     <ul>
       <li>Project: Microscopic insights into amorphous battery anodes</li>
-      <li>Supervisors: <a href="https://www.chem.ox.ac.uk/people/volker-deringer/">Volker Deringer</a>, <a href="https://www.pastagroup.org/">Mauro Pasta</a></li>
+      <li>Supervisors: <a href="https://www.chem.ox.ac.uk/people/volker-deringer/" target="_blank" rel="noopener">Volker Deringer</a>, <a href="https://www.pastagroup.org/" target="_blank" rel="noopener">Mauro Pasta</a></li>
     </ul>
   </div>
 
@@ -40,7 +40,7 @@ I have now (temporarily, at least) settled into the field of machine-learning-dr
         Part II thesis: Local invariance model for short-range order in binary thermoelectrics
       </li>
       <li>
-        Part II supervisors: <a href="https://goodwingroupox.uk/">Andrew Goodwin</a>, <a href="https://scholar.google.com/citations?user=bFmpd3kAAAAJ&hl=en">Nikolaj Roth</a>
+        Part II supervisors: <a href="https://goodwingroupox.uk/" target="_blank" rel="noopener">Andrew Goodwin</a>, <a href="https://scholar.google.com/citations?user=bFmpd3kAAAAJ&hl=en" target="_blank" rel="noopener">Nikolaj Roth</a>
       </li>
     </ul>
   </div>
@@ -78,6 +78,6 @@ I have now (temporarily, at least) settled into the field of machine-learning-dr
 ## Contact
 For anything you’d like to share or discuss, contact me at [litong.wu@jesus.ox.ac.uk](mailto:litong.wu@jesus.ox.ac.uk)
 <br>
-Artwork kindly created by my friend [@jz.potattoo](https://www.instagram.com/jz.potattoo?igsh=c3M3cjE1Y2hqazNh), who is also a tattoo artist.
+Artwork kindly created by my friend [@jz.potattoo](https://www.instagram.com/jz.potattoo), who is also a tattoo artist.
 
 {{< figure src="/images/portrait_sketch.png" alt="portrait_sketch" class="center" width="140" >}}

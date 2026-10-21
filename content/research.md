@@ -17,7 +17,7 @@ with a focus on applying machine learning methods for amorphous materials modell
     <div class="paper-abstract">
       This work investigated the pyrolysis of polyvinylidene chloride (PVDC), a classic precursor of hard carbon. The simulations resolved the transformation from a crystalline polymer to a disordered carbon network, providing insights into the dehydrochlorination, carbon&ndash;carbon cross-linking, and structural rearrangements that drive carbonisation.
       <br>
-      [<a href="https://arxiv.org/abs/2606.21196" class="button">arXiv</a>]
+      [<a href="https://arxiv.org/abs/2606.21196" target="_blank" rel="noopener" class="button">arXiv</a>]
     </div>
   </div>
 </div>
@@ -33,7 +33,7 @@ with a focus on applying machine learning methods for amorphous materials modell
     <div class="paper-abstract">
       Leveraging on an equivariant machine-learned interatomic potential, this work evaluated the applicability of the traditional Zintl&ndash;Klemm rules to the amorphous Na&ndash;P binary system, commonly formed in sodium-ion batteries with phosphorus anodes, and provided further structural, energetic, and electronic analyses.
       <br>
-      [<a href="https://doi.org/10.1002/anie.202508305" class="button">Publication</a> | <a href="https://doi.org/10.48550/arXiv.2504.04920" class="button">arXiv</a> | <a href="https://www.chem.ox.ac.uk/article/zintl-chemistry-in-the-amorphous-state" class="button">News</a>]
+      [<a href="https://doi.org/10.1002/anie.202508305" target="_blank" rel="noopener" class="button">Publication</a> | <a href="https://doi.org/10.48550/arXiv.2504.04920" target="_blank" rel="noopener" class="button">arXiv</a> | <a href="https://www.chem.ox.ac.uk/article/zintl-chemistry-in-the-amorphous-state" target="_blank" rel="noopener" class="button">News</a>]
     </div>
   </div>
 </div>

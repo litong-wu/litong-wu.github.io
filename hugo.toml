@@ -1,8 +1,8 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://litong-wu.github.io/'
 languageCode = 'en-gb'
 defaultContentLanguage = 'en-gb'
 title = 'Litong Wu'
-pagination.paperSize = 10
+disableKinds = ['taxonomy', 'term', 'rss']
 
 # hugo-coder config, see
 # https://github.com/luizdepra/hugo-coder/blob/main/docs/configurations.md
@@ -10,18 +10,7 @@ pagination.paperSize = 10
 author = 'Litong Wu'
 altAuthor = '<span lang="zh-cn">吴莉彤</span>'
 description = 'Litong Wu’s homepage'
-katex = true
-dateFormat = '2 Jan 2006'
 customSCSS = ['scss/custom.scss']
-hideColorSchemeToggle = true
-
-# use CSS for syntax highlighting
-[markup.highlight]
-noClasses = false
-
-[markup.tableOfContents]
-startLevel = 2
-endLevel = 2
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -38,11 +27,6 @@ url = '/'
 name = 'Research'
 weight = 2
 url = '/research/'
-
-# [[languages.en-gb.menu.main]]
-# name = '`Blog`'
-# weight = 3
-# url = '/posts/'
 
 [[languages.en-gb.menu.main]]
 name = 'About'
